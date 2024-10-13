@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LineaCasa - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 150px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links li a:hover {
+            color: lightblue;
+        }
+
+        .hero {
+            background: url(immagini/hero_img.png) no-repeat center center/cover;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .btn-primary {
+            background-color: lightblue;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: blue;
+        }
+
+        .featured-products {
+            max-width: 1200px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .featured-products h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 30%;
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .product-card h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .about {
+            background-color: #fafafa;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .about h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+        }
+
+        .btn-secondary {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-secondary:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .footer-links a:hover {
+            color: lightblue
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="immagini/logo.png" alt="Maynooth Logo" style="width: 20%;"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to LineaCasa</h1>
+            <a href="gallery.html" class="btn-primary">Vai al catalogo</a>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-products">
+        <h2>New Arrivals</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="immagini/product_1.webp" alt="Product 1">
+                <h3>Divano Componibile</h3>
+                <p>€299.00</p>
+            </div>
+            <div class="product-card">
+                <img src="immagini/product_2.jpeg" alt="Product 2">
+                <h3>Tavolo Moderno In Legno</h3>
+                <p>€499.00</p>
+            </div>
+            <div class="product-card">
+                <img src="immagini/product_3.webp" alt="Product 3">
+                <h3>Set Divano Minimal</h3>
+                <p>€799.00</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about">
+        <div class="about-content">
+            <h2>About Linea Casa</h2>
+            <p>Visita la sezione about per saperne di piu sulla nostra storia. <br>&nbsp;</p>
+            <a href="about.html" class="btn-secondary">Scopri di piu</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <small>C.E.O. - Michele Torsani | Software Engineer - Michele Torsani | Progettista - Michele Torsani | Responsabile Marketing - Michele Torsani</small>
+            <p>&copy; 2024 LineaCasa.</p>
+        </div>
+    </footer>
+</body>
+</html>
